@@ -64,3 +64,17 @@ function decrypt(input) {
 function reset() {
     window.location.reload()
 }
+
+function copyT(){
+    const text = document.getElementById("txtMessage")
+    text.select()
+    document.execCommand("copy")
+    alert("The text copied is: \n" + text.value)
+}
+
+function copyE(){
+    const text = document.getElementById("txtResponse")
+    text.select()
+    document.execCommand("copy")
+    alert("The text copied is: \n" + text.value)
+}
